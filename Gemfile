@@ -1,5 +1,8 @@
-source 'https://rubygems.org'
-gem 'jekyll-paginate'
-
-gem "jekyll", "~> 4.0"
-gem "rake"
+source "https://gems.ruby-china.com"
+gem "kramdown"
+gem "kramdown-parser-gfm"
+gem "rouge"
+gem "jekyll"
+gem "jekyll-paginate"
+gem "jekyll-paginate-content"
+gem "json"
