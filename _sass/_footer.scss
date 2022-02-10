@@ -9,9 +9,10 @@
 }
 
 footer {
-  @include center(rem(800px));
+  @include center(rem(1300px));
   border-top: 1px solid darken($accentDark, 10%);
   background: $accentDark;
+
   padding: rem(20px) rem(25px);
   margin-top: rem(50px);
   margin-bottom: rem(120px);
@@ -21,7 +22,17 @@ footer {
     margin-top: rem(100px);
   }
 
+  .copyright {
+    text-align: center;
+    margin-top: rem(20px);
+    color: #311e3e;
+    font-size: 16px;
+  }
+
+
   p {
+    text-align: center;
+    @include center(rem(800px));
     text-decoration: none;
     color: $primaryDark;
     font-size: rem(16px);
@@ -96,3 +107,4 @@ footer {
     }
   }
 }
+

@@ -1,7 +1,8 @@
 # Site Settings
-name: GUO
-title: GUO | A self blog for recording life
-description: GUO记录生活和工作的博客.
+name: Jekflix
+title: Jekflix | A blog theme for Jekyll
+description: Jekflix is a template for Jekyll inspired by Netflix and made by
+  Thiago Rossener.
 tags:
   - blog
   - template
@@ -18,9 +19,9 @@ menu:
     url: /contact
   - title: Feed
     url: /feed.xml
-email: 460887059@qq.com
+email: youremail@test.com
 # See: https://disqus.com/
-disqus_username: 
+disqus_username: disqus_username
 # Contact Form Setting
 # See: https://formspree.io/
 formspree_form_id: formspree_form_id
@@ -29,11 +30,7 @@ formspree_form_id: formspree_form_id
 # Social Media Settings
 # Remove the item if you don't need it
 github_username: liujing1995
-facebook_username: 
-twitter_username: 
-instagram_username: 
-linkedin_username: 
-medium_username: 
+medium_username: medium_username
 
 
 # Posts Settings
