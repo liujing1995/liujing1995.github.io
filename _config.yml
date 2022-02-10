@@ -1,6 +1,6 @@
 # Site Settings
-name: Jekflix
-title: Jekflix | A blog theme for Jekyll
+name: GUO
+title: 用于记录生活和工作的博客
 description: Jekflix is a template for Jekyll inspired by Netflix and made by
   Thiago Rossener.
 tags:
@@ -31,20 +31,20 @@ formspree_form_id: formspree_form_id
 # Remove the item if you don't need it
 github_username: liujing1995
 medium_username: medium_username
-
+zhihu_username: echo-liu-32
 
 # Posts Settings
 show_time_bar: true
 show_modal_on_exit: false
 show_modal_on_finish_post: true
-two_columns_layout: true
+two_columns_layout: false
 
 
 # Advanced Settings
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site
 google_analytics: "UA-XXXXXXXX-X"
-language: "en"
+language: "ch"
 categories_folder: category
 sent_message_url: "/contact/message-sent/"
 

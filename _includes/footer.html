@@ -26,6 +26,13 @@
           <svg><use xlink:href="#icon-linkedin"></use></svg>
         </a>
       {% endif %}
+        {% if site.zhihu_username %}
+        <a href="https://www.zhihu.com/people/{{ site.zhihu_username }}" title="知乎">
+            <svg><use xlink:href="#icon-zhihu"></use></svg>
+        </a>
+        {% endif %}
+
+
     </p>
 
     <div class="copyright">
@@ -38,7 +45,7 @@
         <iframe
                 style="margin-left: 2px; margin-bottom:-5px;"
                 frameborder="0" scrolling="0" width="91px" height="20px"
-                src="https://ghbtns.com/github-btn.html?user=leach-chen&repo=blogdemo&type=star&count=true" >
+                src="https://ghbtns.com/github-btn.html?user=liujing1995&repo=liujing1995.github.io&type=star&count=true" >
         </iframe>
         <span id="busuanzi_container_site_pv">本站总访问量：<span id="busuanzi_value_site_pv"></span>次</span>
     </div>
