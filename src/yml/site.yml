@@ -10,14 +10,14 @@ tags:
   - netlify
 show_hero: true
 menu:
-  - title: Home
+  - title: 所有
     url: /
-  - title: About
-    url: /about
-  - title: Contact
-    url: /contact
-  - title: Feed
-    url: /feed.xml
+  - title: 国企
+    url: /myblog/guoqi
+  - title: 技术
+    url: /myblog/jishu
+  - title: 生活
+    url: /myblog/shenghuo
 email: youremail@test.com
 # See: https://disqus.com/
 disqus_username: disqus_username
