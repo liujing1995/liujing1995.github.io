@@ -1,7 +1,6 @@
 .post {
   position: relative;
   top: rem(30px);
-
   @include media(">=sm") {
     top: rem(50px);
   }
@@ -13,7 +12,7 @@
   padding-bottom: rem(40px);
 
   @include media(">=sm") {
-    max-width: rem(1100px);
+    max-width: rem(1200px);
     flex-direction: row;
     margin: 0 auto;
     padding: rem(40px) 0;
@@ -31,8 +30,9 @@
 
 .post-content {
   overflow-x: auto;
-  padding: rem(40px) 0;
 
+
+  padding: rem(40px) 0;
   &.fullwidth {
     padding: rem(60px) rem(10px) 0;
   }
@@ -338,7 +338,8 @@
 
 .see-also {
   padding: 0 rem(20px);
-
+  position:fixed;
+  left: rem(1150px);
   @include media(">=sm") {
     flex-basis: 30%;
     padding: 0 rem(10px);
