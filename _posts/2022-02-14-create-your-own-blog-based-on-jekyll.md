@@ -34,13 +34,12 @@ GitHub搭建个人网站可基于jekyll或者hexo或者其它的，本教程使�
 
 ##  网站托管
 我们知道，一个网站要能够在任何地方都能够被访问，那么需要部署到服务器上。其实github就提供了这样的功能，只要按照github格式要求，新建一个仓库，把你的网站代码上传到里面，那么就可以在任何时候任何地方都能够访问了，那么如何搭建这个代码托管仓库呢？
-可参考官方链接，我这也把步骤写出来。
 
-1.首先你要到GitHub上注册一个账号,例如我注册的用户名为：liujing1995
+* 首先你要到GitHub上注册一个账号,例如我注册的用户名为：liujing1995
 
-2.点击New repository–>输入仓库名称格式为：用户名.github.io(如：liujing1995.github.io)->点击Create repository
+* 点击New repository–>输入仓库名称格式为：用户名.github.io(如：liujing1995.github.io)->点击Create repository
 
-3.浏览器里访问[https://你自己设定的仓库名称.github.io/](https://liujing1995.github.io/),可以发现这个url可以被访问了，你可以把改仓库拉取到本地，然后在里面新建一个index.html的文件,在里面输入任意内容，然后再把代码推送到git上，然后再访问该链接，可以发现index.html里面的内容被访问到了。
+* 浏览器里访问[https://你自己设定的仓库名称.github.io/](https://liujing1995.github.io/),可以发现这个url可以被访问了，你可以把改仓库拉取到本地，然后在里面新建一个index.html的文件,在里面输入任意内容，然后再把代码推送到git上，然后再访问该链接，可以发现index.html里面的内容被访问到了。
 
 git相关知识点可参考[git使用教程](https://www.jianshu.com/p/e57a4a2cf077)
 
@@ -130,7 +129,7 @@ $ gulp
 
 
 
-## 修改模板
+## 如何修改模板
 
 ### 1、修改配置文件
 
@@ -146,13 +145,13 @@ $ gulp
 
 ### 3、修改模板
 
-提供的模板文件在\_includes/和\_layouts/下
+提供的模板文件在\_includes/和\_layouts/下，想要修改模板就要先了解jekyll的调用逻辑。
 
 #### 3.1 jekyll调用逻辑
 
-1. jekyll项目首先会访问主目录结构下的index.html
+首先，jekyll项目首先会访问主目录结构下的index.html
 
-   ![](/image/create-your-own-blog-based-on-jekyll/xx.png "图1")
+![](/image/create-your-own-blog-based-on-jekyll/xx.png "图1")
 
 任何只要包含[Front Matter](https://jekyllrb.com/docs/frontmatter/)头信息的文件在 Jekyll 中都能被当做一个特殊的文件来处理，[Front Matter](https://jekyllrb.com/docs/frontmatter/)可以理解为两行三虚线之间，需要定义两行三虚线之间的内容。
 
@@ -186,10 +185,8 @@ $ gulp
     </tr>
   </tbody>
 </table>
-
-在本教程中的index.html中，layout变量的值为post，表示采用`_layouts`目录下的post.html作为模板。
-
-2. 加载\_layout文件夹内的所有模板，并将其中的 字段按照_includes文件夹内对应文件填入
+在本教程中的index.html中，layout变量的值为home，表示采用`_layouts`目录下的home.html作为模板。其调用原理如下：
+2. 加载\_layout文件夹内的所有模板，并将其中的字段按照_includes文件夹内对应文件填入。
 
 3. 遍历_post文件夹及子文件夹，对所有命名符合`yyyy-mm--dd-title.md` 格式的博客文件放入`site.posts` 变量(按时间倒序)，并对其进行解析，并且根据[Front Matter](https://jekyllrb.com/docs/frontmatter/) 头的内容套入layout生成对应title的博客，解析生成的博客按照目录结构放在\_site/ 文件夹中。
 
